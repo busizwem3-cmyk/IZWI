@@ -120,4 +120,9 @@ $("navHome").onclick=()=>window.scrollTo({top:0,behavior:"smooth"});$("navMap").
 document.querySelectorAll("[data-theme]").forEach(b=>b.onclick=()=>{IZWIThemeMusic.play(b.dataset.theme);document.querySelectorAll("[data-theme]").forEach(x=>x.classList.remove("active"));b.classList.add("active");$("musicStatus").textContent="Playing "+b.dataset.theme});
 $("stopMusic").onclick=()=>{IZWIThemeMusic.stop();$("musicStatus").textContent="Theme stopped."};
 render();if("serviceWorker"in navigator)navigator.serviceWorker.register("sw.js");
-</script></body></html>
+</script>
+<div id="v2bar" style="position:fixed;top:64px;left:50%;transform:translateX(-50%);padding:7px 11px;border-radius:12px;background:#0b1014dd;border:1px solid #ffffff18;font:700 12px system-ui;z-index:10">V2 • eMhlabeni exploration build</div>
+<script>
+(()=>{const b=document.createElement('button');b.textContent='EXPLORE';Object.assign(b.style,{position:'fixed',right:'16px',bottom:'92px',zIndex:20,padding:'13px 16px',border:0,borderRadius:'14px',fontWeight:'800',background:'#d9ff4a',color:'#101400'});document.body.appendChild(b);b.onclick=()=>{alert('IZWI V2: Exploration systems are online. Explore eMhlabeni, use the phone, visit locations and interact with characters.');};})();
+</script>
+</body></html>
